@@ -1,0 +1,13 @@
+﻿﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p>
+    Welcome to the Student Management Portal
+    <ul>
+        <li>CRUD operations for User and Student implemented using Entity Framework Core and AutoMapper</li>
+        <li>Authentication and Authorization will be added in the next practical.</li>
+    </ul>
+    @Html.ActionLink("Student List", "Index", "Students", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("User List", "Index", "Users", null, new { @class = "btn btn-primary" })
+</p>
