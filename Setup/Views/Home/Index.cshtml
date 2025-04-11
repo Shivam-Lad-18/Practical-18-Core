@@ -1,13 +1,20 @@
-﻿﻿@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
 
-<p>
-    Welcome to the Student Management Portal
-    <ul>
-        <li>CRUD operations for User and Student implemented using Entity Framework Core and AutoMapper</li>
-        <li>Authentication and Authorization will be added in the next practical.</li>
-    </ul>
-    @Html.ActionLink("Student List", "Index", "Students", null, new { @class = "btn btn-primary" })
-    @Html.ActionLink("User List", "Index", "Users", null, new { @class = "btn btn-primary" })
-</p>
+<div class="container mt-4">
+
+    <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">Welcome to the Student Management Portal</h4>
+        <ul class="mb-0">
+            <li><strong>CRUD operations</strong> for <span class="text-primary">User</span> and <span class="text-primary">Student</span> are implemented using <strong>Entity Framework Core</strong> and <strong>AutoMapper</strong>.</li>
+            <li><strong>Authentication</strong> and <strong>Authorization</strong> will be added in the <span class="text-danger">next practical</span>.</li>
+        </ul>
+    </div>
+
+    <div class="d-flex gap-3">
+        @Html.ActionLink("Student List", "Index", "Students", null, new { @class = "btn btn-success" })
+        @Html.ActionLink("User List", "Index", "Users", null, new { @class = "btn btn-primary" })
+    </div>
+
+</div>
